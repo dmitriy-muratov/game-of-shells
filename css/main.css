@@ -134,19 +134,6 @@ ol, ul {
 }
 #middle {
 	overflow: hidden;
-}
-
-/* Header
------------------------------------------------------------------------------*/
-#header {
-	height: 80px;
-    background: #2d2d2d;
-    border-bottom: 2px solid #666;
-}
-
-/* Middle
------------------------------------------------------------------------------*/
-#middle {
 	padding: 50px 0;
     text-align: center;
 }
@@ -212,33 +199,16 @@ ol, ul {
     position: relative;
     z-index: 1000;
     margin: 0 auto 50px;
+    padding: 0;
+    transition: padding 0.35s linear;
 }
-.win {
+.win.active {
     background: url(../images/win.jpg) 0 0 no-repeat;
     width: 400px;
-    height: 323px;
+    padding: 162px 0;
 }
-.lose {
+.lose.active {
     background: url(../images/over.jpg) 0 0 no-repeat;
     width: 290px;
-    height: 263px;
+    padding: 132px 0;
 }
-
-
-
-
-/* Footer
------------------------------------------------------------------------------*/
-#footer {
-	background: #000;
-	height: 83px;
-	position: relative;
-    margin: -83px auto 0;
-}
-#footer .inner {
-	background: #0c0c0c;
-}
-.h_footer {
-	height: 83px;
-}
-
